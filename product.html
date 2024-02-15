@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <title> Product</title>
+    <link rel="icon" href="images/logo.webp">
+
+</head>
+
+<body>
+    <!-- Start navbar -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo"><img src="images/logo.webp" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+
+
+                    <li class="nav__item">
+                        <a href="product.html" class="nav__link">Product</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="Categories.html" class="nav__link">Categories</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact_Us.html" class="nav__link">Contact US</a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Search button -->
+                <i class="ri-search-line nav__search" id="search-btn"></i>
+
+                <!-- Login button -->
+                <i class="ri-user-line nav__login" id="login-btn"></i>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+                <!-- Cart button -->
+                <div class="nav_cart">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>0</span>
+                    <p>$0.00</p>
+                  </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== SEARCH ====================-->
+    <div class="search" id="search">
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you ?" class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login" id="login">
+        <form action="" class="login__form">
+            <h2 class="login__title">Log In</h2>
+
+            <div class="login__group">
+                <div>
+                    <label for="email" class="login__label">Email</label>
+                    <input type="email" placeholder="Write your email" id="email" class="login__input">
+                </div>
+
+                <div>
+                    <label for="password" class="login__label">Password</label>
+                    <input type="password" placeholder="Enter your password" id="password" class="login__input">
+                </div>
+            </div>
+
+            <div>
+                <p class="login__signup">
+                    You do not have an account? <a href="#">Sign up</a>
+                </p>
+
+                <a href="#" class="login__forgot">
+                    You forgot your password
+                </a>
+
+                <button type="submit" class="login__button">Log In</button>
+            </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+    <!-- End navbar -->
+
+    <!-- Start Content -->
+    <section class="section_containar" >
+        <div class="container pb-5" >
+            <div class="row" >
+                <div class="col-lg-5 mt-5">
+                    <div class="card mb-3" id="imge_product">
+                        <img class="card-img img-fluid" src="images/Products slide/iphone 15_2.jpg"
+                            alt="Card image cap" id="product-detail">
+                    </div>
+                    <div class="row">
+                        <!--Start Controls-->
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="prev">
+                                <i class="text-dark fas fa-chevron-left"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </div>
+                        <!--End Controls-->
+                        <!--Start Carousel Wrapper-->
+                        <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item"
+                            data-bs-ride="carousel">
+                            <!--Start Slides-->
+                            <div class="carousel-inner product-links-wap" role="listbox">
+
+                                <!--First slide-->
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid"
+                                                    src="images/Products slide/iphone 15_2.jpg" alt="Product Image 1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid"
+                                                    src="images/Products slide/iPhone_15_Pro_Max.webp"
+                                                    alt="Product Image 2">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid"
+                                                    src="images/Products slide/iphone 15_2.jpg" alt="Product Image 3">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.First slide-->
+
+                                <!--Second slide-->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid"
+                                                    src="images/Products slide/iPhone_15_Pro_Max.webp"
+                                                    alt="Product Image 4">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid"
+                                                    src="images/Products slide/iPhone_15_Pro_Max.webp"
+                                                    alt="Product Image 5">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid"
+                                                    src="images/Products slide/iphone 15_3.png" alt="Product Image 6">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.Second slide-->
+
+                                <!--Third slide-->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid"
+                                                    src="images/Products slide/iphone 15_3.png" alt="Product Image 7">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid"
+                                                    src="images/Products slide/iphone 15_3.png" alt="Product Image 8">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid"
+                                                    src="images/Products slide/iphone 15_2.jpg" alt="Product Image 9">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.Third slide-->
+                            </div>
+                            <!--End Slides-->
+                        </div>
+                        <!--End Carousel Wrapper-->
+                        <!--Start Controls-->
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="next">
+                                <i class="text-dark fas fa-chevron-right"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <!--End Controls-->
+                    </div>
+                </div>
+                <!-- col end -->
+                <div class="col-lg-7 mt-5" >
+                    <div class="card" id="product">
+                        <div class="card-body">
+                            <h1 class="h2">Active Electronic Devices</h1>
+                            <p class="h3 py-2">$1250.00</p>
+                            <p class="py-2">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-secondary"></i>
+                                <span class="list-inline-item text-dark">Rating 4.8 </span>
+                            </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Brand:</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>Aplee</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Description:</h6>
+                            <p>he iPhone 15 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.12 inches diagonally (actual viewable area is less).</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Avaliable Color :</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>White / Black</strong></p>
+                                </li>
+                            </ul>
+                            <form action="" method="GET">
+                                <input type="hidden" name="product-title" value="Activewear">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <ul class="list-inline pb-3">
+                                            <li class="list-inline-item">Size :
+                                    
+                                            </li>
+                                            <li class="list-inline-item"><span class="btn btn-success btn-size"  style="background-color: #fff; color: #146481; width: 80px;">128GB</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="btn btn-success btn-size"  style="background-color: #fff; color: #146481;width: 80px;">256GB</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="btn btn-success btn-size"  style="background-color: #fff; color: #146481;width: 80px;">512GB</span>
+                                            </li>
+                                            <li class="list-inline-item"><span
+                                                    class="btn btn-success btn-size"  style="background-color: #fff; color: #146481;width: 80px;">1TB</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-auto" >
+                                        <ul class="list-inline pb-3" >
+                                            <li class="list-inline-item text-right">
+                                                Quantity
+                                                <input type="hidden" name="product-quanity" id="product-quanity"
+                                                    value="1"  >
+                                            </li>
+                                            <li class="list-inline-item" ><span class="btn btn-success"
+                                                    id="btn-minus" style="background-color:#146481; width: 50px;">-</span></li>
+                                            <li class="list-inline-item"><span class="badge bg-secondary"
+                                                    id="var-value" ><input type="text" class="bg-secondary"  style="width: 50px; height: 30px;"></span></li>
+                                            <li class="list-inline-item" ><span class="btn btn-success"
+                                                    id="btn-plus" style="background-color: #146481; width: 50px;  ">+</span ></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col d-grid" >
+                                        <button type="submit" class="btn btn-success btn-lg" name="submit"
+                                            value="buy"  style="background-color: #146481">Buy</button>
+                                    </div>
+                                    <div class="col d-grid">
+                                        <button type="submit" class="btn btn-success btn-lg" name="submit"
+                                            value="addtocard"  style="background-color: #fff; color: #146481;">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Content -->
+     <!-- START FOOTER -->
+  <footer class="site-footer" id="contact" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-12 mb-4">
+          <img src="images/logo.webp" class="logo img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 mx-auto">
+          <h5 class="site-footer-title mb-3">Contact </h5>
+
+          <p class="text-white d-flex mb-2">
+            <i class="bi-telephone me-2"></i>
+
+            <a href="tel:  777 474 754" class="site-footer-link">
+              +967 777 474 754
+            </a>
+          </p>
+
+          <p class="text-white d-flex">
+            <i class="bi-envelope me-2"></i>
+
+            <a href="mailto:malmaqtry280@gmail.com" class="site-footer-link">
+              malmaqtry280@gmail.com
+            </a>
+          </p>
+
+          <p class="text-white d-flex mt-3">
+            <i class="bi-geo-alt me-2"></i>
+            Sana`a Hail Street
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- End FOOTER -->
+    <!-- Start Script -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- End Script -->
+</body>
+
+</html>
